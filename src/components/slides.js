@@ -31,7 +31,7 @@ class Slides extends React.Component {
                 Reveal.initialize({
                     center: false,
                     progress: false,
-                    showNotes: true,
+                    showNotes: false,
                     controls: true,
                     width: '100%',
                     height: 600,
