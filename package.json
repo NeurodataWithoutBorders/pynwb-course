@@ -1,9 +1,9 @@
 {
-    "name": "course-starter-python",
+    "name": "nwb-python-course",
     "private": true,
-    "description": "Starter package to build interactive Python courses",
+    "description": "Mini-course in Python to teach neuroscientists and other users hwo to use the Neurodata Without Borders data format.",
     "version": "0.0.1",
-    "author": "Ines Montani <ines@explosion.ai>",
+    "author": "Ryan Ly <rly@lbl.gov>",
     "dependencies": {
         "@illinois/react-use-local-storage": "^1.1.0",
         "@jupyterlab/outputarea": "^0.19.1",
@@ -52,6 +52,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ines/course-starter-python"
+        "url": "https://github.com/rly/nwb-python-course"
     }
 }

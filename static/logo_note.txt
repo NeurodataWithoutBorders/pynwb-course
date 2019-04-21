@@ -1,0 +1,2 @@
+logo.svg was converted from nwb_n_logo.png using Inkscape.
+TODO: find original vector logo
