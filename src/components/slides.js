@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Marked from 'reveal.js/plugin/markdown/marked.js'
 import classNames from 'classnames'
-
+import Prism from 'prismjs'
 import '../styles/reveal.css'
 import classes from '../styles/slides.module.sass'
 
@@ -34,12 +34,17 @@ class Slides extends React.Component {
                     showNotes: false,
                     controls: true,
                     width: '100%',
-                    height: 600,
-                    minScale: 0.75,
+                    height: 650,
+                    minScale: 1,
                     maxScale: 1,
+                    transitionSpeed: 'fast',
                 })
             })
         })
+        const langs = ['python']
+        Promise.all(langs.map(lang => import(`prismjs/components/prism-${lang}`))).then(() =>
+            Prism.highlightAll()
+        )
     }
 
     componentWillUnmount() {

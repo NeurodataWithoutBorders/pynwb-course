@@ -1,8 +1,8 @@
 ---
 title: 'Chapter 1: Getting started'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
+  'This chapter will introduce you to the basics of the Neurodata Without Borders:
+  Neurophysiology (NWB:N) data format using Python.'
 prev: null
 next: /chapter2
 type: chapter
