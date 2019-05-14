@@ -4,7 +4,7 @@
     "slogan": "A data standard for neurophysiology",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec velit nec, consectetur placerat enim.",
     "bio": "Ryan is a neuroscientist and one of the core developers of Neurodata Without Borders.",
-    "siteUrl": "https://course-starter-python.netlify.com",
+    "siteUrl": "https://nwb-python-course.netlify.com",
     "twitter": "NeurodataWB",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
     "testTemplate": "from wasabi import Printer\n__msg__ = Printer()\n__solution__ = \"\"\"${solution}\"\"\"\n\n${solution}\n\n${test}\n\ntry:\n    test()\nexcept AssertionError as e:\n    __msg__.fail(e)",

@@ -16,7 +16,27 @@ id: 1
 
 </exercise>
 
-<exercise id="2" title="Getting Started">
+<exercise id="2" title="First steps">
+
+Let's try out PyNWB!
+
+**Part 1: Creating an NWBFile**
+
+First, let's review how to create an `NWBFile`.
+
+- Import the `NWBFile` class from `pynwb` and create the `NWBFile` object.
+- You will need to pass in the arguments `session_description`, `identifier`,
+and `session_start_time`.
+
+<codeblock id="01_02">
+
+Review the code in Section 1 if you are stuck!
+
+</codeblock>
+
+** Part 2 **
+
+<exercise id="3" title="Getting Started">
 
 Let's ask some questions about the slides. Whats the correct answer?
 
@@ -41,21 +61,5 @@ This is not correct either.
 </choice>
 
 </exercise>
-
-<exercise id="3" title="First steps">
-
-This is a code exercise. The content can be formatted in simple Markdown – so
-you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
-the one for the instructions below.
-
-- These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_03`, `solution_01_03` and
-  `test_01_03` in `/exercises`.
-
-<codeblock id="01_03">
-
-This is a hint.
-
-</codeblock>
 
 </exercise>
