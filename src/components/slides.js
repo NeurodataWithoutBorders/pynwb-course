@@ -43,7 +43,7 @@ class Slides extends React.Component {
         })
         const langs = ['python']
         Promise.all(langs.map(lang => import(`prismjs/components/prism-${lang}`))).then(() =>
-            Prism.highlightAll()
+            setTimeout(() => { Prism.highlightAll() }, 1000)
         )
     }
 
