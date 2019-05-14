@@ -34,7 +34,9 @@ Review the code in Section 1 if you are stuck!
 
 </codeblock>
 
-** Part 2 **
+**Part 2**
+
+</exercise>
 
 <exercise id="3" title="Getting Started">
 
@@ -60,6 +62,6 @@ This is not correct either.
 </opt>
 </choice>
 
-</exercise>
+
 
 </exercise>
