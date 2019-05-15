@@ -40,6 +40,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `legal`,
+                path: `${__dirname}/legal`,
+            },
+        },
+        {
             resolve: 'gatsby-plugin-react-svg',
             options: {
                 rule: {

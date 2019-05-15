@@ -2,8 +2,8 @@
     "courseId": "pynwb-course",
     "title": "NWB Python Course",
     "slogan": "A data standard for neurophysiology",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec velit nec, consectetur placerat enim.",
-    "bio": "Ryan is a neuroscientist and one of the core developers of Neurodata Without Borders.",
+    "description": "In this course, you will learn about the NWB data standard and how to interact with NWB files using the PyNWB interface. You will start from the very basics and work up to reading, writing, and interacting with a variety of different data types supported by NWB.",
+    "bio": "Neurodata Without Borders: Neurophysiology (NWB:N) is a project to develop a unified data format for cellular-based neurophysiology data.",
     "siteUrl": "https://pynwb-course.netlify.com",
     "twitter": "NeurodataWB",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
@@ -18,8 +18,10 @@
     },
     "showProfileImage": true,
     "footerLinks": [
-        { "text": "Main Website", "url": "https://neurodatawithoutborders.github.io/" },
-        { "text": "Overview", "url": "https://www.nwb.org/" },
+        { "text": "NWB Main Website", "url": "https://neurodatawithoutborders.github.io/" },
+        { "text": "Overview of the NWB Project", "url": "https://www.nwb.org/" },
+        { "text": "Follow us on Twitter", "url": "https://twitter.com/NeurodataWB"},
+        { "text": "Legal", "url": "legal"},
         { "text": "Source", "url": "https://github.com/NeurodataWithoutBorders/pynwb-course" },
         { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-python" }
     ],
