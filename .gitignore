@@ -1,4 +1,4 @@
-.nwb
+*.nwb
 .vscode
 
 # Logs
