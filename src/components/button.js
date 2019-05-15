@@ -30,7 +30,7 @@ export const CompleteButton = ({ completed, toggleComplete, small = true }) => {
                 <>
                     <IconCheck width={14} height={14} className={classes.completeIcon} />{' '}
                     <span className={classes.completeLabel}>Completed</span>{' '}
-                    <span className={classes.completeLabelHover}>Remove from completed</span>
+		    <span className={classes.completeLabelHover}>Completed</span>
                 </>
             )}
         </Button>
