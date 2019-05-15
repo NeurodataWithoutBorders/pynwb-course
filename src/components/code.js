@@ -90,6 +90,7 @@ class CodeBlock extends React.Component {
                                     kernelType
                                     lang
                                     debug
+                                    isolateCells
                                 }
                             }
                         }
@@ -105,7 +106,7 @@ class CodeBlock extends React.Component {
                 `}
                 render={data => {
                     const { testTemplate } = data.site.siteMetadata
-                    const { repo, branch, kernelType, debug, lang } = data.site.siteMetadata.juniper
+                    const { repo, branch, kernelType, debug, lang, isolateCells } = data.site.siteMetadata.juniper
                     const files = getFiles(data)
                     const sourceFile = files[sourceId]
                     const solutionFile = files[solutionId]
@@ -121,6 +122,7 @@ class CodeBlock extends React.Component {
                                     lang={lang}
                                     kernelType={kernelType}
                                     debug={debug}
+                                    isolateCells={isolateCells}
                                     actions={({ runCode }) => (
                                         <>
                                             <Button onClick={() => runCode()}>Run Code</Button>
