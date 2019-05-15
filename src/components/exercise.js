@@ -16,7 +16,14 @@ const Exercise = ({ id, title, type, children }) => {
         if (isExpanded && excRef.current) {
             excRef.current.scrollIntoView()
         }
+        document.addEventListener('click', handleClickOutside, false)
+        return () => document.removeEventListener('click', handleClickOutside, false)
     }, [isExpanded])
+    const handleClickOutside = ({ target }) => {
+        if (isExpanded && type === 'slides' && excRef.current && !excRef.current.contains(target)) {
+            setActiveExc(null)
+        }
+    }
     const handleExpand = useCallback(() => setActiveExc(isExpanded ? null : excId), [
         isExpanded,
         excId,
