@@ -6,7 +6,7 @@ start_time = datetime.now(tzlocal())
 # Import the NWBFile class
 from pynwb import NWBFile
 
-nwbfile = NWBFile(session_description='This is a description for this session',
-               identifier='Mouse10-Day1',
-               session_start_time=start_time)
+nwbfile = NWBFile(session_description='A description for this session',
+                  identifier='Mouse10-Day1',
+                  session_start_time=start_time)
 print('Session ID:', nwbfile.identifier)

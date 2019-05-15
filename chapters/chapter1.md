@@ -69,7 +69,7 @@ Review the code in Section 1 if you are stuck!
 
 Pop quiz! What units are all timestamps of `TimeSeries` stored as?
 
-<choice>
+<choice id="01_03_01">
 <opt text="Milliseconds">
 
 Sorry, try again.
@@ -87,7 +87,7 @@ Good job!
 Sorry, try again.
 
 </opt>
-</choice>
+</choice id="01_03_02">
 
 An `NWBFile` requires a `session_description`, an `identifier`, and what?
 
