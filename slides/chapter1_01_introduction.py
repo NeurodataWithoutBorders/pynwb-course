@@ -29,7 +29,7 @@ running_speed = TimeSeries(name='RunningSpeed',
 nwbfile.add_acquisition(running_speed)
 
 running_speed_read = nwbfile.get_acquisition('RunningSpeed')
-print(running_speed_read.unit)
+print('First running speed:', running_speed_read.data[0], running_speed_read.unit)
 
 from pynwb import NWBHDF5IO
 

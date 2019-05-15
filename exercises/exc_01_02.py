@@ -7,6 +7,6 @@ start_time = datetime.now(tzlocal())
 from ____ import ____
 
 nwbfile = ____(____='This is a description for this session',
-               ____='An ID for this session',
+               ____='Mouse10-Day1',
                ____=start_time)
-print('Session ID: ' + nwbfile.____)
+print('Session ID:', nwbfile.____)
