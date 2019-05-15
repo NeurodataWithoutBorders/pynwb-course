@@ -1,5 +1,5 @@
 {
-    "name": "nwb-python-course",
+    "name": "pynwb-course",
     "private": true,
     "description": "Mini-course in Python to teach neuroscientists and other users hwo to use the Neurodata Without Borders data format.",
     "version": "0.0.1",
