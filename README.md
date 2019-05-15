@@ -1,8 +1,8 @@
 # PyNWB Mini Course
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NeurodataWithoutBorders/pynwb-course)
-
 [![Initialize Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NeurodataWithoutBorders/pynwb-course/dev)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5455e7db-13e6-4145-9140-abeecdb01ea3/deploy-status)](https://app.netlify.com/sites/pynwb-course/deploys)
 
 ## Running the app
 
