@@ -29,7 +29,7 @@ const Exercise = ({ id, title, type, children }) => {
         }
     }
     const handleEscapePress = (e) => {
-        if (isExpanded && excRef.current && (e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27)) {
+        if (isExpanded && excRef.current && (e.key === 'Escape' || e.key === 'Esc' || e.keyCode === 27)) {
             setActiveExc(null)
         }
     }
