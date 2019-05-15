@@ -18,13 +18,13 @@ id: 1
 
 <exercise id="2" title="First steps">
 
-**Part 1: Creating an NWBFile**
+### Part 1: Creating an NWBFile
 
 Let's try out PyNWB! First, let's review how to create an `NWBFile`.
 
 - Import the `NWBFile` class from `pynwb`, create the `NWBFile` object
 - You will need to pass in the arguments `session_description`, `identifier`,
-and `session_start_time`.
+and `session_start_time` to the constructor.
 - Finally, print out the session identifier from the `NWBFile`.
 
 <codeblock id="01_02">
