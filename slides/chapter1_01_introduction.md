@@ -111,7 +111,7 @@ nwbfile.add_acquisition(running_speed)
 Accessing data stored in the `NWBFile` is about as easy as accessing metadata stored in the `NWBFile`. Since an `NWBFile` can have multiple acquisition data, use the `NWBFile` method `get_acquisition` and pass the name of the `TimeSeries` that you want to access.
 
 ```python
-running_speed_read = nwbfile.get_acquisition('RunningSpeed')
+running_speed_read = nwbfile.acquisition['RunningSpeed']
 print('First running speed:', running_speed_read.data[0], running_speed_read.unit)
 ```
 ```out
