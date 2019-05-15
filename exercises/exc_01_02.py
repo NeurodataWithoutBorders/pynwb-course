@@ -9,3 +9,4 @@ from ____ import ____
 nwbfile = ____(____='This is a description for this session',
                ____='An ID for this session',
                ____=start_time)
+print('Session ID: ' + nwbfile.____)
