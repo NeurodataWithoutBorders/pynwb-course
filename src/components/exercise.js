@@ -17,10 +17,19 @@ const Exercise = ({ id, title, type, children }) => {
             excRef.current.scrollIntoView()
         }
         document.addEventListener('click', handleClickOutside, false)
-        return () => document.removeEventListener('click', handleClickOutside, false)
+        document.addEventListener('keydown', handleEscapePress, false)
+        return () => {
+            document.removeEventListener('click', handleClickOutside, false)
+            document.removeEventListener('keydown', handleEscapePress, false)
+        }
     }, [isExpanded])
     const handleClickOutside = ({ target }) => {
         if (isExpanded && type === 'slides' && excRef.current && !excRef.current.contains(target)) {
+            setActiveExc(null)
+        }
+    }
+    const handleEscapePress = (e) => {
+        if (isExpanded && excRef.current && (e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27)) {
             setActiveExc(null)
         }
     }
