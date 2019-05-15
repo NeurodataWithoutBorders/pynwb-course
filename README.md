@@ -1,29 +1,10 @@
-# Online course starter: Python
+# PyNWB Mini Course
 
-This is a starter repo based on the
-[course framework](https://github.com/ines/spacy-course) I developed for my
-[spaCy course](https://course.spacy.io). The front-end is powered by
-[Gatsby](http://gatsbyjs.org/) and [Reveal.js](https://revealjs.com) and the
-back-end code execution uses [Binder](https://mybinder.org) 💖
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ines/courser-starter-python)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NeurodataWithoutBorders/pynwb-course)
 
 [![](https://user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-python.netlify.com)
 
-## ✅ Quickstart
-
-1. [Import](https://github.com/new/import) this repo, install it and make sure
-   the app is running locally.
-2. Customize the [`meta.json`](meta.json) and
-   [`binder/requirements.txt`](binder/requirements.txt).
-3. Build a [Binder](https://mybinder.org) from the `binder` branch of this repo.
-4. Add content (chapters, exercises and slides) and optionally add separate
-   content license.
-5. Customize the UI theme in [`theme.sass`](theme.sass) and update images in
-   [`static`](static) as needed.
-6. Deploy the app, e.g. to [Netlify](https://netlify.com).
-
-### Running the app
+## Running the app
 
 To start the local development server, install [Gatsby](https://gatsbyjs.org)
 and then all other dependencies. This should serve up the app on
