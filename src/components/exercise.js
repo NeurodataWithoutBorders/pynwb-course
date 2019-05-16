@@ -12,17 +12,6 @@ const Exercise = ({ id, title, type, children }) => {
     const { activeExc, setActiveExc, completed, setCompleted } = useContext(ChapterContext)
     const isExpanded = activeExc === excId
     const isCompleted = completed.includes(excId)
-    useEffect(() => {
-        if (isExpanded && excRef.current) {
-            excRef.current.scrollIntoView()
-        }
-        document.addEventListener('click', handleClickOutside, false)
-        document.addEventListener('keydown', handleEscapePress, false)
-        return () => {
-            document.removeEventListener('click', handleClickOutside, false)
-            document.removeEventListener('keydown', handleEscapePress, false)
-        }
-    }, [isExpanded])
     const handleClickOutside = ({ target }) => {
         if (isExpanded && type === 'slides' && excRef.current && !excRef.current.contains(target)) {
             setActiveExc(null)
@@ -33,17 +22,29 @@ const Exercise = ({ id, title, type, children }) => {
             setActiveExc(null)
         }
     }
-    const handleExpand = useCallback(() => setActiveExc(isExpanded ? null : excId), [
-        isExpanded,
-        excId,
-    ])
+    const handleExpand = useCallback(() => setActiveExc(isExpanded ? null : excId), [isExpanded, excId])
     const handleNext = useCallback(() => setActiveExc(excId + 1))
     const handleSetCompleted = useCallback(() => {
-        const newCompleted = isCompleted
-            ? completed.filter(v => v !== excId)
-            : [...completed, excId]
-        setCompleted(newCompleted)
+        setTimeout(() => {
+            const newCompleted = isCompleted
+                ? completed.filter(v => v !== excId)
+                : [...completed, excId]
+            setCompleted(newCompleted)
+        }, 20) // previously, when !isCompleted and the button was pressed, the modal would close
+        // possibly because of simultaneous update of react DOM from button and exercise. timeout
+        // helps prevent clash
     }, [isCompleted, completed, excId])
+    useEffect(() => {
+        if (isExpanded && excRef.current) {
+            excRef.current.scrollIntoView()
+            document.addEventListener('click', handleClickOutside, false)
+            document.addEventListener('keydown', handleEscapePress, false)
+        }
+        return () => {
+            document.removeEventListener('click', handleClickOutside, false)
+            document.removeEventListener('keydown', handleEscapePress, false)
+        }
+    }, [isExpanded, handleClickOutside, handleEscapePress])
     const rootClassNames = classNames(classes.root, {
         [classes.expanded]: isExpanded,
         [classes.wide]: isExpanded && type === 'slides',
