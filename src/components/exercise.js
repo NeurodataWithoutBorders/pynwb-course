@@ -43,7 +43,7 @@ const Exercise = ({ id, title, type, children }) => {
             ? completed.filter(v => v !== excId)
             : [...completed, excId]
         setCompleted(newCompleted)
-    }, [isCompleted, handleSetCompleted, excId])
+    }, [isCompleted, completed, excId])
     const rootClassNames = classNames(classes.root, {
         [classes.expanded]: isExpanded,
         [classes.wide]: isExpanded && type === 'slides',
