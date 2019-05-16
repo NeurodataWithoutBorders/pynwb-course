@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 1: Getting started'
+title: 'Chapter 1: Getting Started'
 description:
   'This chapter will introduce you to the basics of the Neurodata Without Borders:
   Neurophysiology (NWB:N) data format using Python.'

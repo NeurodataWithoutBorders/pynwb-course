@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 2: More stuff'
+title: 'Chapter 2: '
 description:
   'This chapter will teach you even more stuff and help you learn some new
   concepts.'
