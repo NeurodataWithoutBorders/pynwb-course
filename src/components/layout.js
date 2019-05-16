@@ -35,11 +35,11 @@ const Layout = ({ isHome, title, description, children }) => {
                         <SEO title={title} description={description} />
                         <main className={classes.root}>
                             {!isHome && (
-                                <h1 className={classes.logo}>
+                                <div>
                                     <Link hidden to="/">
-                                        <Logo width={250} height={54} aria-label={meta.title} />
+                                        <Logo className={classes.logo} aria-label={meta.title} />
                                     </Link>
-                                </h1>
+                                </div>
                             )}
                             <div className={classes.content}>
                                 {(title || description) && (
