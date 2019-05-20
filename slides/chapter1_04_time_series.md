@@ -47,7 +47,33 @@ running_speed_read = nwbfile.acquisition['RunningSpeed']
 print('First running speed:', running_speed_read.data[0], running_speed_read.unit)
 ```
 ```out
-0.5596276463909797 m/s
+First running speed: 0.5596276463909797 m/s
+```
+
+# Inspecting a NWBFile
+
+We can inspect the `NWBFile` object at a high level by simply printing out the
+object.
+
+```python
+print(nwbfile)
+```
+```out
+root <class 'pynwb.file.NWBFile'>
+Fields:
+  acquisition: { RunningSpeed <class 'pynwb.base.TimeSeries'> }
+  analysis: { }
+  devices: { }
+  electrode_groups: { }
+  epoch_tags: {}
+  ic_electrodes: { }
+  imaging_planes: { }
+  lab_meta_data: { }
+  ogen_sites: { }
+  processing_modules: { }
+  stimulus: { }
+  stimulus_template: { }
+  time_intervals: { }
 ```
 
 ---

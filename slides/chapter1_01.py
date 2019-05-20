@@ -11,8 +11,10 @@ nwbfile = NWBFile(session_description='Mouse Running on Spherical Treadmill',
                   identifier='Mouse314-Running',
                   session_start_time=start_time)
 
+##
 print(nwbfile.session_description)
 
+###
 from pynwb import TimeSeries
 from numpy.random import rand # to create some random data
 
@@ -26,11 +28,16 @@ running_speed = TimeSeries(name='RunningSpeed',
                            unit='m/s',
                            timestamps=timestamps)
 
+##
 nwbfile.add_acquisition(running_speed)
 
+##
 running_speed_read = nwbfile.get_acquisition('RunningSpeed')
 print('First running speed:', running_speed_read.data[0], running_speed_read.unit)
 
+print(nwbfile)
+
+###
 from pynwb import NWBHDF5IO
 
 with NWBHDF5IO('example_file_path.nwb', 'w') as io:

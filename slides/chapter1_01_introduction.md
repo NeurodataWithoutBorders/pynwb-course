@@ -40,7 +40,7 @@ nwbfile = NWBFile(session_description='Mouse Running on Spherical Treadmill',
 
 # Setting the session start time
 
-In the previous example, we set the `session_start_time` argument for the `NWBFile` constructor to `None`. That's actually not allowed. Storing times properly is important for understanding most neurophysiology data. In an NWB file, timestamps are stored relative to a defined, shared starting time. You could define it as the time that data acquisition began for this session, or a more global start time, such as January 1, 1970 (the Unix time reference). The latter works better if you plan to combine data from multiple sessions into a single file.
+In the previous example, we set the `session_start_time` argument for the `NWBFile` constructor to `None`. That's actually not allowed. Storing times properly is important for understanding most neurophysiology data. In an NWB file, by default, timestamps are stored relative to the starting time of the session, and so this time needs to be specified when creating an `NWBFile` object.
 
 Let's set the `session_start_time` argument to April 21, 2019 at 11:00am in the current timezone.
 
